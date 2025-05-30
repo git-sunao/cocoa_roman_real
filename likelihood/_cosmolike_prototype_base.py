@@ -325,6 +325,16 @@ class _cosmolike_prototype_base(DataSetLikelihood):
         params_values.get(p, None) for p in [
           survey+"_BMAG_"+str(i+1) for i in range(self.lens_ntomo)
         ]
+      ],
+      CS2 = [
+        params_values.get(p, 0.0 ) for p in [
+          survey+"_CS2_"+str(i+1) for i in range(self.lens_ntomo)
+        ]
+      ],
+      RS2 = [
+        params_values.get(p, 0.0 ) for p in [
+          survey+"_RS2_"+str(i+1) for i in range(self.lens_ntomo)
+        ]
       ]
     )
     ci.set_nuisance_clustering_photoz(

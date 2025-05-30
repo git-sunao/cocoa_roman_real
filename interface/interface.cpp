@@ -178,13 +178,17 @@ void set_nuisance_clustering_photoz(std::vector<double> CP)
 void set_nuisance_bias(
     std::vector<double> B1, 
     std::vector<double> B2, 
-    std::vector<double> BMAG
+    std::vector<double> BMAG,
+    std::vector<double> CS2,
+    std::vector<double> RS2
   )
 {
   cosmolike_interface::set_nuisance_bias(
       arma::conv_to<arma::Col<double>>::from(B1),
       arma::conv_to<arma::Col<double>>::from(B2),
-      arma::conv_to<arma::Col<double>>::from(BMAG)
+      arma::conv_to<arma::Col<double>>::from(BMAG),
+      arma::conv_to<arma::Col<double>>::from(CS2),
+      arma::conv_to<arma::Col<double>>::from(RS2)
     );
 }
 
@@ -394,7 +398,9 @@ PYBIND11_MODULE(cosmolike_roman_real_interface, m)
       "Set nuisance Bias Parameters",
       py::arg("B1").none(false),
       py::arg("B2").none(false),
-      py::arg("B_MAG").none(false)
+      py::arg("B_MAG").none(false),
+      py::arg("CS2").none(false),
+      py::arg("RS2").none(false)
     );
 
   m.def("set_nuisance_shear_calib",
