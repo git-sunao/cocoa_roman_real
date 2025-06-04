@@ -21,7 +21,9 @@ IA_model: 0
 ggl_exclude: [[6,0],[7,0],[7,1]]  
 
 # BIAS REDSHIFT EVOLUTION [b1,b2,bs2,b3,bmag] (choices: see bias.h)
-bias_model: [0,0,0,1,0]
+# bias_model: [0,0,0,1,0]
+# BIAS REDSHIFT EVOLUTION [b1,b2,bs2,b3,bmag,bcs2,brs2,brd] (choices: see bias.h)
+bias_model: [0,0,0,1,0,0,0,0]
 
 print_intermediate_products: False
 

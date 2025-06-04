@@ -253,3 +253,200 @@
   roman_PM8:
     value: 0.0
     latex: PM_\mathrm{Roman}^8
+  # ------------------------------------------------------------------------
+  # ------------------------------------------------------------------------
+  # ------------------------------------------------------------------------
+  # EFT couter term
+  roman_CS2_1:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{1})^2
+  roman_CS2_2:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{2})^2
+  roman_CS2_3:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{3})^2
+  roman_CS2_4:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{4})^2
+  roman_CS2_5:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{5})^2
+  roman_CS2_6:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{6})^2
+  roman_CS2_7:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{7})^2
+  roman_CS2_8:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (c_\mathrm{s-Roman}^{8})^2
+  # ------------------------------------------------------------------------
+  # ------------------------------------------------------------------------
+  # ------------------------------------------------------------------------
+  # EFT higher derivative term
+  roman_RS2_1:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^1)^2
+  roman_RS2_2:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^2)^2
+  roman_RS2_3:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^3)^2
+  roman_RS2_4:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^4)^2
+  roman_RS2_5:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^5)^2
+  roman_RS2_6:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^6)^2
+  roman_RS2_7:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^7)^2
+  roman_RS2_8:
+    prior:
+      min: 0.0
+      max: 900.0
+    ref:
+      dist: norm
+      loc: 100.0
+      scale: 10.0
+    proposal: 10.0
+    latex: (R_\mathrm{*-Roman}^8)^2
+  # ------------------------------------------------------------------------
+  # ------------------------------------------------------------------------
+  # ------------------------------------------------------------------------
+  # EFT Guassian damping scale in Mpc/h
+  # This shouold be usually fixed during the parameter inference.
+  roman_RD_1:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^1
+  roman_RD_2:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^2
+  roman_RD_3:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^3
+  roman_RD_4:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^4
+  roman_RD_5:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^5
+  roman_RD_6:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^6
+  roman_RD_7:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^7
+  roman_RD_8:
+    value: 1.0
+    latex: r_\mathrm{d-Roman}^8

@@ -201,6 +201,24 @@ sampler:
       roman_B1_6: 2.15
       roman_B1_7: 2.52
       roman_B1_8: 2.44
+      # Counter term
+      roman_CS2_1: 10.0
+      roman_CS2_2: 10.0
+      roman_CS2_3: 10.0
+      roman_CS2_4: 10.0
+      roman_CS2_5: 10.0
+      roman_CS2_6: 10.0
+      roman_CS2_7: 10.0
+      roman_CS2_8: 10.0
+      # Higher-order derivative term
+      roman_RS2_1: 10.0
+      roman_RS2_2: 10.0
+      roman_RS2_3: 10.0
+      roman_RS2_4: 10.0
+      roman_RS2_5: 10.0
+      roman_RS2_6: 10.0
+      roman_RS2_7: 10.0
+      roman_RS2_8: 10.0
       w0pwa: -1.0
       w: -1.0
 

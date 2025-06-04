@@ -180,7 +180,8 @@ void set_nuisance_bias(
     std::vector<double> B2, 
     std::vector<double> BMAG,
     std::vector<double> CS2,
-    std::vector<double> RS2
+    std::vector<double> RS2,
+    std::vector<double> RD
   )
 {
   cosmolike_interface::set_nuisance_bias(
@@ -188,7 +189,8 @@ void set_nuisance_bias(
       arma::conv_to<arma::Col<double>>::from(B2),
       arma::conv_to<arma::Col<double>>::from(BMAG),
       arma::conv_to<arma::Col<double>>::from(CS2),
-      arma::conv_to<arma::Col<double>>::from(RS2)
+      arma::conv_to<arma::Col<double>>::from(RS2),
+      arma::conv_to<arma::Col<double>>::from(RD)
     );
 }
 
@@ -400,7 +402,8 @@ PYBIND11_MODULE(cosmolike_roman_real_interface, m)
       py::arg("B2").none(false),
       py::arg("B_MAG").none(false),
       py::arg("CS2").none(false),
-      py::arg("RS2").none(false)
+      py::arg("RS2").none(false),
+      py::arg("RD").none(false)
     );
 
   m.def("set_nuisance_shear_calib",

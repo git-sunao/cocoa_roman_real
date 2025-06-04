@@ -326,14 +326,22 @@ class _cosmolike_prototype_base(DataSetLikelihood):
           survey+"_BMAG_"+str(i+1) for i in range(self.lens_ntomo)
         ]
       ],
+      # Counter term of EFT
       CS2 = [
         params_values.get(p, 0.0 ) for p in [
           survey+"_CS2_"+str(i+1) for i in range(self.lens_ntomo)
         ]
       ],
+      # Higher order derivative term of EFT
       RS2 = [
         params_values.get(p, 0.0 ) for p in [
           survey+"_RS2_"+str(i+1) for i in range(self.lens_ntomo)
+        ]
+      ],
+      # Gaussian damping scale for EFT, in Mpc/h
+      RD = [
+        params_values.get(p, 1.0 ) for p in [
+          survey+"_RD_"+str(i+1) for i in range(self.lens_ntomo)
         ]
       ]
     )
