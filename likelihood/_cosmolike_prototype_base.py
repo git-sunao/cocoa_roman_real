@@ -321,6 +321,16 @@ class _cosmolike_prototype_base(DataSetLikelihood):
           survey+"_B2_"+str(i+1) for i in range(self.lens_ntomo)
         ]
       ],
+      BS2 = [
+        params_values.get(p, None) for p in [
+          survey+"_BS2_"+str(i+1) for i in range(self.lens_ntomo)
+        ]
+      ],
+      B3 = [
+        params_values.get(p, None) for p in [
+          survey+"_B3_"+str(i+1) for i in range(self.lens_ntomo)
+        ]
+      ],
       B_MAG = [
         params_values.get(p, None) for p in [
           survey+"_BMAG_"+str(i+1) for i in range(self.lens_ntomo)
